@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de texto</title>
+</head>
+<body>
+    <form name="text_editor" action="./assets/php/guardar.php" method="post" id="text">
+        
+        
+        <label for="file_name">Nombre del archivo</label><br>
+        <input type="text" name="file_name" id="file_name"><br>
+
+        <!--
+            AÑADIR ESTE ATRIBUTO DE ÚLTIMO A TEXTAREA
+            autocorrect="on" 
+        -->
+        <label for="file_content">Contenido</label><br>
+        <textarea name="file_content" id="file_content" cols="150" rows="25" wrap="off" placeholder="Comienza a escribir aquí..."></textarea><br>
+
+        <button id="guardar" type="submit">Guardar</button>
+
+    </form>
+</body>
+</html>
